@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "amplifyreactapp_identitypool_0f9e0a77",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "amplifyreactapp",
+    "sharedId": "0f9e0a77",
+    "serviceName": "Cognito",
+    "useDefault": "manual"
+  }
+}

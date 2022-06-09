@@ -1,22 +1,67 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-amplifyreactapp-dev-114005-authRole",
-            "UnauthRoleArn": "arn:aws:iam::132713045207:role/amplify-amplifyreactapp-dev-114005-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::132713045207:role/amplify-amplifyreactapp-dev-114005-authRole",
-            "Region": "us-east-1",
-            "DeploymentBucketName": "amplify-amplifyreactapp-dev-114005-deployment",
-            "UnauthRoleName": "amplify-amplifyreactapp-dev-114005-unauthRole",
-            "StackName": "amplify-amplifyreactapp-dev-114005",
-            "StackId": "arn:aws:cloudformation:us-east-1:132713045207:stack/amplify-amplifyreactapp-dev-114005/89bfed30-e7e0-11ec-a012-0a6e6428d797",
-            "AmplifyAppId": "d3cogaz5t3m4m"
-        }
-    },
-    "hosting": {
-        "amplifyhosting": {
-            "service": "amplifyhosting",
-            "type": "cicd",
-            "lastPushTimeStamp": "2022-06-09T11:35:54.003Z"
-        }
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyreactapp-dev-114005-authRole",
+      "UnauthRoleArn": "arn:aws:iam::132713045207:role/amplify-amplifyreactapp-dev-114005-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::132713045207:role/amplify-amplifyreactapp-dev-114005-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifyreactapp-dev-114005-deployment",
+      "UnauthRoleName": "amplify-amplifyreactapp-dev-114005-unauthRole",
+      "StackName": "amplify-amplifyreactapp-dev-114005",
+      "StackId": "arn:aws:cloudformation:us-east-1:132713045207:stack/amplify-amplifyreactapp-dev-114005/89bfed30-e7e0-11ec-a012-0a6e6428d797",
+      "AmplifyAppId": "d3cogaz5t3m4m"
     }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2022-06-09T11:35:54.003Z"
+    }
+  },
+  "auth": {
+    "amplifyreactapp": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": []
+        },
+        "mfaTypes": [],
+        "verificationMechanisms": []
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyreactapp-dev-114005-deployment/amplify-cfn-templates/auth/amplifyreactapp-cloudformation-template.json",
+        "logicalId": "authamplifyreactapp"
+      },
+      "lastPushTimeStamp": "2022-06-09T12:13:09.621Z",
+      "output": {
+        "IdentityPoolId": "us-east-1:0e99edba-f96f-4307-8341-99218a99dbcf",
+        "IdentityPoolName": "amplifyreactapp_identitypool_0f9e0a77__dev"
+      },
+      "lastPushDirHash": "Vu8R6el/gX3/cdjjQlm98iYvYUA="
+    }
+  },
+  "analytics": {
+    "amplifyreactapp": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyreactapp-dev-114005-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+        "logicalId": "analyticsamplifyreactapp"
+      },
+      "lastPushTimeStamp": "2022-06-09T12:13:09.621Z",
+      "output": {
+        "appName": "amplifyreactapp-dev",
+        "Region": "us-east-1",
+        "Id": "5f59144d8a4148ba8274cd3bd2d706b4"
+      },
+      "lastPushDirHash": "jKLmku5/b4sCOGR4CnbaJ/D5Sbs="
+    }
+  }
 }

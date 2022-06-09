@@ -1,0 +1,24 @@
+{
+  "identityPoolName": "amplifyreactapp_identitypool_0f9e0a77",
+  "allowUnauthenticatedIdentities": true,
+  "authSelections": "identityPoolOnly",
+  "resourceName": "amplifyreactapp",
+  "sharedId": "0f9e0a77",
+  "serviceName": "Cognito",
+  "useDefault": "manual",
+  "authRoleArn": {
+    "Fn::GetAtt": [
+      "AuthRole",
+      "Arn"
+    ]
+  },
+  "unauthRoleArn": {
+    "Fn::GetAtt": [
+      "UnauthRole",
+      "Arn"
+    ]
+  },
+  "breakCircularDependency": true,
+  "useEnabledMfas": true,
+  "dependsOn": []
+}
