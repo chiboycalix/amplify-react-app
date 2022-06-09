@@ -11,5 +11,12 @@
       "StackId": "arn:aws:cloudformation:us-east-1:132713045207:stack/amplify-amplifyreactapp-dev-114005/89bfed30-e7e0-11ec-a012-0a6e6428d797",
       "AmplifyAppId": "d3cogaz5t3m4m"
     }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2022-06-09T11:35:54.003Z"
+    }
   }
 }
